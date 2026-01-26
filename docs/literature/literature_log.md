@@ -55,5 +55,5 @@ J. Fan, X. Ye, J. Kim, B. Archambeault and A. Orlandi, "Signal Integrity Design 
 T. -L. Wu, F. Buesink and F. Canavero, "Overview of Signal Integrity and EMC Design Technologies on PCB: Fundamentals and Latest Progress," in IEEE Transactions on Electromagnetic Compatibility, vol. 55, no. 4, pp. 624-638, Aug. 2013, doi: 10.1109/TEMC.2013.2257796. 
 
 **Relevance**
-*This paper gives the context for stochastic manufacturing variations during the manufacture of PCB. This will help us with the project to consider the schotastic variation while predicting the s-params and during the output.
+* This paper gives the context for stochastic manufacturing variations during the manufacture of PCB. This will help us with the project to consider the schotastic variation while predicting the s-params and during the output.
 
