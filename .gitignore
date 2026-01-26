@@ -1,0 +1,17 @@
+# Python junk
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Data (Too big for Git - only keep local)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+results/models/*
+!results/models/.gitkeep
+
+# IDE settings
+.vscode/
+.idea/
+.DS_Store
