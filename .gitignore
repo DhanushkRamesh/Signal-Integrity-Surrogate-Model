@@ -1,9 +1,24 @@
 # Python junk
 __pycache__/
 *.py[cod]
+*$py.class
 .ipynb_checkpoints/
+.pytest_cache/
 
-# Data (Too big for Git - only keep local)
+# Virtual Environments (CRUCIAL)
+venv/
+.venv/
+env/
+bin/
+lib/
+develop-eggs/
+dist/
+build/
+
+# Obsidian vault files
+.obsidian/
+
+# Data (Professional DE strategy: keep structure, ignore files)
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
@@ -11,7 +26,18 @@ data/processed/*
 results/models/*
 !results/models/.gitkeep
 
-# IDE settings
+# PyTorch/ML specific
+*.pth
+*.onnx
+mlruns/
+lightning_logs/
+
+# IDE and OS settings
 .vscode/
 .idea/
 .DS_Store
+*.swp
+
+# Secrets/Local Config
+.env
+local_settings.py
