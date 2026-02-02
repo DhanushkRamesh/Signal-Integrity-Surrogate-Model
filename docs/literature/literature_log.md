@@ -1,6 +1,9 @@
-#Literature Search Log
+**Literature Search Log**
 
 **Student:** Dhanush Kumar Ramesh
+
+**Supervisor:** Dr. Marissa Condon
+
 **Project:** ML-Based Surrogate Model For Signal Integrity
 
 | Date | Database | Search Terms | Results | Useful Hits |
@@ -48,12 +51,13 @@ This paper used Guassian process which gives insights on physivs informed loss-f
 **Citation:**
 J. Fan, X. Ye, J. Kim, B. Archambeault and A. Orlandi, "Signal Integrity Design for HighSpeed Digital Circuits: Progress and Directions," in IEEE Transactions on Electromagnetic Compatibility, vol. 52, no. 2, pp. 392-400, May 2010, doi: 10.1109/TEMC.2010.2045381.
 
-**relevance** 
+**Relevance** 
 * This paper is used to find the problem statement that we are solving which gives foundational knoledge on the non-ideal effects (skin-effects and surface roughness)
 
 ### 5. PCB Technology Overview
 **Citation:**
 T. -L. Wu, F. Buesink and F. Canavero, "Overview of Signal Integrity and EMC Design Technologies on PCB: Fundamentals and Latest Progress," in IEEE Transactions on Electromagnetic Compatibility, vol. 55, no. 4, pp. 624-638, Aug. 2013, doi: 10.1109/TEMC.2013.2257796. 
+
 **Relevance**
-*This paper gives the context for stochastic manufacturing variations during the manufacture of PCB. This will help us with the project to consider the schotastic variation while predicting the s-params and during the output.
+* This paper gives the context for stochastic manufacturing variations during the manufacture of PCB. This will help us with the project to consider the schotastic variation while predicting the s-params and during the output.
 

@@ -1,6 +1,9 @@
-#project meeting minutes
+**project meeting minutes**
+
  **Date:** 21-01-2026
+
  **Location:** Stokes Builing, DCU.
+
  **Attendees:** Dhanush Kumar Ramesh (Student), Dr. Marissa Condon(Supervisor)
  
 ## 1. Agenda
@@ -8,21 +11,21 @@
  * Feedback on proposed approach for the surrogate model.
  * Establishment of the project repository and initial tasks.
  
-##2 Key Discussion Points                                                                               
+## 2 Key Discussion Points                                                                               
 
- ###Topic A: Technical Approach
+ ### Topic A: Technical Approach
  * Study the scientific approach of Complex Valued Neural Networl detailed in paper "Surrogate Modeling With Complex-Valued Neural
 Nets for Signal Integrity Applications" and study the math behind it.
  * Need to investigate if any open-source datasets available that can be used for training and also methods to generate datasets.
  * Explore if the forward model could be implemented in python and also if the simulations can be done in
  python.
  
- ###Topic B: Future Directions
+ ### Topic B: Future Directions
  * Defining appropriate objective functions for the inverse model.
  * Inverse model should also be implemented in python.
  * Exploration of novel aspects that could be added to the project.
  
- ###Topic C: Repository Setup
+ ### Topic C: Repository Setup
  * Create a Repository in GitHub to track and document the progress.
 
 ## 3. Decisions Made
@@ -45,4 +48,4 @@ rom the paper and modified to our project need.
 ## Next Meeting
  **Date:** 04-02-2026 (To be confirmed)
 
- EOF
+
