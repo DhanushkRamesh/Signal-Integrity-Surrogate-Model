@@ -6,8 +6,6 @@
 
 **Project:** ML-Based Surrogate Model For Signal Integrity
 
-| Date | Database | Search Terms | Results | Useful Hits |
-| :--- | :--- | :--- | :--- | :--- |
 
 | Date | Database | Search Terms | Results | Useful Hits |
 | :--- | :--- | :--- | :--- | :--- |
