@@ -12,6 +12,13 @@
 | 30-11-2025 | IEEE Xplore | "integrated circuit modelling" AND "signal Integrity applications" AND "Neural Networks" | 27 | 1 (Akinwande et al.) |
 | 03-12-2025 | IEEE Xplore | "high-density interconnects" AND "machine learning" | 43 | 1 (Sreekumar & Gupta) |
 | 07-01-2026 | Google Scholar | "physics-informed" AND "interconnects" | 1600 | 3 (Garbuglia et al.) (J. Fan et al) (T. -L. Wu et al.) |
+| 12-01-2026 | Research Gate | "PCB manufacturing" AND "Impedance" AND "Variation" | 540 | 1 (Abdelghani Renbi et al.) |
+| 14-01-2026 | IEEE Xplore | "signal and power integrity" AND "channel modeling" | 2 | 1 (Juhitha Konduru et al.) |
+| 21-01-2026 | IEEE Xplore | "SI/PI Database" AND "Machine Learning" | 7 | 1 (Morten Schierholz et al.) |
+| 05-02-2026 | IEEE Xplore | "inverse design" AND "Neural Network" AND "channel" | 24 | 1 (Hanzhi Ma et al.) |
+| 07-02-2026 | arxiv  | "inverse problems" AND "Deep Learning" | 8 | 1 (Jaweria Amjad et al.) |
+
+
 
 
 ## 2. Log of Articles Reviewed
@@ -58,4 +65,77 @@ T. -L. Wu, F. Buesink and F. Canavero, "Overview of Signal Integrity and EMC Des
 
 **Relevance**
 * This paper gives the context for stochastic manufacturing variations during the manufacture of PCB. This will help us with the project to consider the schotastic variation while predicting the s-params and during the output.
+
+### 6. Manufacturing variations
+**Citation**
+Renbi, A.; Carlson, J.; Delsing, J. Impact of pcb manufacturing process variations on trace impedance. In Proceedings of theInternational Symposium on Microelectronics, Long Beach, CA, USA, 9–13 October 2011; International Microelectronics As-sembly and Packaging Society: Pittsburgh, PA, USA, 2008; pp. 000891–000895. 
+
+**Key Findings**
+The author demonstrates that the use of 1-D convolution neural networks are more efficient and effective than the standard dense layers to capture the high-frequncy ripples in the S-Parameters. 
+
+**Strength**
+1_D CNN architecture captures the harmonics in the freqency data i.e. long range dependencies
+
+**Weakness**
+In this paper the model addresses only the forward path and no Inverse model is implemented
+
+**Relevance**
+This paper provide a reference for improving the architecture for the forward model where the 1-D CNN can be adapted to build the tandem loop to detect the small signal deviations caused by manufaturing defects.
+
+### 7. Convolution Nets for Forward Modeling
+**Citation**
+J. Konduru, O. Mikulchenko, L. Y. Foo and J. E. Schutt-Ainé, "Signal Integrity Analysis and Design Optimization using Neural Networks," _2024 IEEE 74th Electronic Components and Technology Conference (ECTC)_, Denver, CO, USA, 2024, pp. 924-928, doi: 10.1109/ECTC51529.2024.00150.
+
+**Key Findings**
+The author demonstrates that the use of 1-D convolution neural networks are more efficient and effective than the standard dense layers to capture the high-frequncy ripples in the S-Parameters. 
+
+**Strength**
+1_D CNN architecture captures the harmonics in the freqency data i.e. long range dependencies
+
+**Weakness**
+In this paper the model addresses only the forward path and no Inverse model is implemented
+
+**Relevance**
+This paper provide a reference for improving the architecture for the forward model where the 1-D CNN can be adapted to build the tandem loop to detect the small signal deviations caused by manufaturing defects.
+
+### 8. Database for the model
+**Citation**
+M. Schierholz _et al_., "SI/PI-Database of PCB-Based Interconnects for Machine Learning Applications," in _IEEE Access_, vol. 9, pp. 34423-34432, 2021, doi: 10.1109/ACCESS.2021.3061788.
+
+**Key Findings**
+This paper provides the biggest dataset for SI/PI data of PCB-Based Interconnects for Machine Learning Applications
+
+**Relevance**
+We use this data to train the model for our machine learning architecture.
+
+### 9. Inverse model Tandem Network
+**Citation**
+H. Ma et al., "Channel Inverse Design Using Tandem Neural Network," 2022 IEEE 26th Workshop on Signal and Power Integrity (SPI), Siegen, Germany, 2022, pp. 1-3, doi: 10.1109/SPI54345.2022.9874935.
+
+**Key Findings**
+The paper explores channel inverse design using Tandem neural network to solve non-uniqueness problem in invese design. They connect the inverse network to the pre-trained forward model to converge the geometrics from the s-parameters
+
+**Strength**
+Tandem neural net solves the one-to-many mapping problem as there can be multiple geometries that can yield the same s-parameters
+
+**Weakness**
+The model just assume the forward model without any optimization wihtout any circuit constraints
+**Relevance**
+This Tandem Neural Net model cn be adapted as baseline where we can inprovise the architecture further for our model.
+
+### 10. Algorrithm exploration
+**Citation**
+J. Amjad, Z. Lyu, and M. R. D. Rodrigues, "Deep Learning for Inverse Problems: Bounds and Regularizers," in arXiv preprint arXiv:1901.11352, 2019.
+
+**Key Findings**
+This paper proves that the stability of the solution is directly linked to the spectral norm of the Jacobian matrix for the inverse problems. The neural network can be precvented from being tricked by regularizing the Jacobian.
+
+**Strength**
+This provides the theorem connecting Jacobian size to the generelazation errors
+
+**Relevance**
+Even though the core concept is focused on image reconstruction, the Jacobian regularization conceept can be adapted to apply in PCB manufacturing yield.
+
+
+
 

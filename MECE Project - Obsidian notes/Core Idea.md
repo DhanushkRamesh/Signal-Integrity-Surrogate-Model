@@ -7,8 +7,8 @@ High-speed digital design requires yield analysis - that need a vast amount of s
 
 ==**Solution**==: 
 
-- We propose a physics embedded neural network where our model predicts the constitutive physical parameters (RLGC) instead of predicting the signal directly. these predicted physical parameters are then fed to the hard-coded Telegrapher's equation layer to maintan physical consistency.
-- We plan to use hybrid model inspired by Akinwade et al. (complex weights) and Konduru et al. (S-TCNN) where the complex weights are used to model the cause )skin effect/impedance) so that the R/L preserves phase coupling through the complex weights.
+- We propose a physics embedded neural network where our model predicts the constitutive physical parameters (RLGC) instead of predicting the signal directly. these predicted physical parameters are then fed to the hard-coded Telegrapher's equation layer to maintain physical consistency.
+- We plan to use hybrid model inspired by Akinwade et al. (complex weights) and Konduru et al. (S-TCNN) where the complex weights are used due to the skin effect the impedance transformation is a complex phenomenon. Complex-valued neural nets ensures that frequency dependent resistance and inductance are mathematically preserved during training.
 - We also try to modify the logic by predicting the physical parameters (RLGC) instead of directly predicting the S-params which kind of adds a physics verification layer to maintain the authenticity and physical constraint. (Where the physics - Telegraphers equation is hard coded) 
 - The rough Arch will be- Input (Geometry) --> Complex S TCNN (model) --> Physical projections (RLGC) --> Physics Layer --> Output (s-params)
 ************
@@ -33,5 +33,5 @@ Layer 4: Physics layer - Hard-Coded Telegraphers equation where we derive the s 
 --> Data Generation -> Model Deployment --> Active Learning Loop --> Validation and Yield Analysis
 *****************
 
-==**Inverse model**== - backpropogation from the forward model - need to plan the logic
+==**Inverse model**== - backpropogation from the forward model
 ******************
