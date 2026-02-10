@@ -3,6 +3,7 @@
 High-speed digital design requires yield analysis - that need a vast amount of simulations (manufacturing variations/Tolerances) to ensure the circuit won't fail in mass production. Currently there are a few methods used in the industry,
 - Commercial Solvers (HFSS/CST): These commercial solvers are of high accuracy but they are very slow for generating 10,000 + simulations which may take months to simulate.
 - Standard AI innovations: AI models are being adapted to make the simulation faster but most of them use basic models, and recent innovations of using complex models have unconstrained approximations which may fail while there is a slight variation during the manufacturing.
+- There are quite a few established forward model to predict the s-parameters from the given input geometrics but the exploration on a proper inverse design process is less. In this project we try to explore the inverse model to predict the geometrics from the target s-parameters also considering the manufacturing yield ()
 ***********************
 
 ==**Solution**==: 
